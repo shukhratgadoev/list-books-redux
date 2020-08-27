@@ -1,0 +1,12 @@
+//get a list of books
+export const DEFAULT_BOOKS_LIST = 'DEFAULT_BOOKS_LIST';
+
+export const FETCH_BOOKS_LIST = 'FETCH_BOOKS_LIST';
+export const FETCH_BOOKS_LIST_SUCCESS = 'FETCH_BOOKS_LIST_SUCCESS';
+export const FETCH_BOOKS_LIST_FAILURE = 'FETCH_BOOKS_LIST_FAILURE';
+
+export const SHOW_LOADER = 'SHOW_LOADER';
+export const HIDE_LOADER = 'HIDE_LOADER';
+
+export const SHOW_ALERT = 'SHOW_ALERT';
+export const HIDE_ALERT = 'HIDE_ALERT';
