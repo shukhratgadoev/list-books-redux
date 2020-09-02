@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import createSagaMiddleware from 'redux-saga';
 import thunk from 'redux-thunk';
 import { createStore, compose, applyMiddleware } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
 
 import './index.css';
 import App from './App';
@@ -17,9 +18,8 @@ const saga = createSagaMiddleware();
 
 const store = createStore(
 	rootReducer,
-	compose(
-		applyMiddleware(thunk, saga),
-		window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+	composeWithDevTools(
+		applyMiddleware(thunk, saga)
 	)
 );
 
